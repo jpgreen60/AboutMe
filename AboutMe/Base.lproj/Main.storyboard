@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BR3-NP-bg9">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,50 +10,218 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Basic Personal Information-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AboutMe" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Basic Personal Information" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="05y-sr-NLA">
+                                <rect key="frame" x="91" y="70" width="193" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zKZ-GD-Faj">
+                                <rect key="frame" x="87" y="200" width="201" height="190"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name: John Peter Green" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tv2-RG-WJs">
+                                        <rect key="frame" x="0.0" y="0.0" width="201" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="DOB: March 26, 1960" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="13Q-eh-vTO">
+                                        <rect key="frame" x="0.0" y="80" width="201" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="POB: Hamilton, ON, Canada" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZMl-vj-ULw">
+                                        <rect key="frame" x="0.0" y="160" width="201" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="0.40495311379999999" green="0.80144744310000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="05y-sr-NLA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLu-b4-LuY"/>
+                            <constraint firstItem="zKZ-GD-Faj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TbU-iH-O7X"/>
+                            <constraint firstItem="zKZ-GD-Faj" firstAttribute="top" secondItem="05y-sr-NLA" secondAttribute="bottom" constant="100" id="U9J-l0-A9Y"/>
+                            <constraint firstItem="05y-sr-NLA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="lBl-vL-Mgo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Basic Personal Information" id="B64-cQ-gMu"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="141"/>
+            <point key="canvasLocation" x="1071.2" y="139.880059970015"/>
         </scene>
-        <!--View Controller-->
+        <!--Schools Attended-->
         <scene sceneID="3iJ-Yc-dWS">
             <objects>
                 <viewController id="Dt8-aa-jJp" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uZP-tp-2B8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Schools Attended" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MI6-dD-Mff">
+                                <rect key="frame" x="119.5" y="70" width="136" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="0O4-Ni-GQQ">
+                                <rect key="frame" x="79" y="160" width="217" height="420"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="W.H. Ballard Elementary" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yXF-UZ-04E">
+                                        <rect key="frame" x="0.0" y="0.0" width="217" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sherwood Heights Elementary" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eBQ-5b-MPT">
+                                        <rect key="frame" x="0.0" y="65" width="217" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Highview Elementary" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oCy-Mk-pJr">
+                                        <rect key="frame" x="0.0" y="130" width="217" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sherwood Secondary" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gG8-RN-iJz">
+                                        <rect key="frame" x="0.0" y="195" width="217" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Southmount Secondary" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="edO-8d-I26">
+                                        <rect key="frame" x="0.0" y="260" width="217" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="McMaster University" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vJc-xH-rdO">
+                                        <rect key="frame" x="0.0" y="325" width="217" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Mohawk College" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="IjI-hR-Tgg">
+                                        <rect key="frame" x="0.0" y="390" width="217" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="MI6-dD-Mff" firstAttribute="top" secondItem="qlu-Jb-8VY" secondAttribute="top" constant="50" id="6Hk-M8-ZtJ"/>
+                            <constraint firstItem="0O4-Ni-GQQ" firstAttribute="top" secondItem="MI6-dD-Mff" secondAttribute="bottom" constant="60" id="JiL-Cl-ZvY"/>
+                            <constraint firstItem="MI6-dD-Mff" firstAttribute="centerX" secondItem="uZP-tp-2B8" secondAttribute="centerX" id="x32-6I-20k"/>
+                            <constraint firstItem="0O4-Ni-GQQ" firstAttribute="centerX" secondItem="uZP-tp-2B8" secondAttribute="centerX" id="yVy-pW-nj6"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="qlu-Jb-8VY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Schools Attended" id="jFX-6W-70J"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DZu-TH-eCo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="140"/>
+            <point key="canvasLocation" x="1824.8" y="139.880059970015"/>
         </scene>
-        <!--View Controller-->
+        <!--Hobbies and Interests-->
         <scene sceneID="eRD-8k-MQM">
             <objects>
                 <viewController id="ca7-m4-4jk" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Sdg-rX-Z9x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Hobbies and Interests" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ioR-Wo-0IB">
+                                <rect key="frame" x="106" y="70" width="163" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Y4n-Bg-G5h">
+                                <rect key="frame" x="124" y="125" width="127" height="130"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Audio and Video" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Gnh-At-0CZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="127" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Computers" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="peO-MQ-hAm">
+                                        <rect key="frame" x="0.0" y="50" width="127" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Girl Watching" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wyO-Jp-cvt">
+                                        <rect key="frame" x="0.0" y="100" width="127" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dorothy Stratten16" translatesAutoresizingMaskIntoConstraints="NO" id="fhL-3P-yeF">
+                                <rect key="frame" x="-17.5" y="280" width="410" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="MVa-OG-4DY"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="0.66799789669999998" green="0.47512125970000002" blue="0.25860109930000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="fhL-3P-yeF" firstAttribute="centerX" secondItem="Sdg-rX-Z9x" secondAttribute="centerX" id="6kg-an-E3F"/>
+                            <constraint firstItem="ioR-Wo-0IB" firstAttribute="top" secondItem="6Pc-Hh-PGM" secondAttribute="top" constant="50" id="9an-t5-vHS"/>
+                            <constraint firstItem="Y4n-Bg-G5h" firstAttribute="centerX" secondItem="Sdg-rX-Z9x" secondAttribute="centerX" id="FQI-hf-l7F"/>
+                            <constraint firstItem="Y4n-Bg-G5h" firstAttribute="top" secondItem="ioR-Wo-0IB" secondAttribute="bottom" constant="25" id="QDg-Ib-pRM"/>
+                            <constraint firstItem="ioR-Wo-0IB" firstAttribute="centerX" secondItem="Sdg-rX-Z9x" secondAttribute="centerX" id="cEw-pB-14o"/>
+                            <constraint firstItem="fhL-3P-yeF" firstAttribute="top" secondItem="Y4n-Bg-G5h" secondAttribute="bottom" constant="25" id="hJK-5r-3tA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Pc-Hh-PGM"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Hobbies and Interests" id="q5B-5P-hWo"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Hh-T8-qlR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1636" y="141"/>
+            <point key="canvasLocation" x="2575.1999999999998" y="139.880059970015"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="tof-cT-SAY">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="BR3-NP-bg9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="gAM-4B-rop">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="G9u-8Y-e05"/>
+                        <segue destination="Dt8-aa-jJp" kind="relationship" relationship="viewControllers" id="Vmh-Y6-6qI"/>
+                        <segue destination="ca7-m4-4jk" kind="relationship" relationship="viewControllers" id="GSg-rK-Jld"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FnX-Zn-5I2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="139.880059970015"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Dorothy Stratten16" width="410" height="601"/>
+    </resources>
 </document>
