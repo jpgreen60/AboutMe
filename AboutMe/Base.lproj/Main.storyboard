@@ -25,7 +25,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="zKZ-GD-Faj">
-                                <rect key="frame" x="87" y="200" width="201" height="190"/>
+                                <rect key="frame" x="87" y="238.5" width="201" height="190"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Name: John Peter Green" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tv2-RG-WJs">
                                         <rect key="frame" x="0.0" y="0.0" width="201" height="30"/>
@@ -50,9 +50,9 @@
                         </subviews>
                         <color key="backgroundColor" red="0.40495311379999999" green="0.80144744310000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="zKZ-GD-Faj" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7ev-x5-JIw"/>
                             <constraint firstItem="05y-sr-NLA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="MLu-b4-LuY"/>
                             <constraint firstItem="zKZ-GD-Faj" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TbU-iH-O7X"/>
-                            <constraint firstItem="zKZ-GD-Faj" firstAttribute="top" secondItem="05y-sr-NLA" secondAttribute="bottom" constant="100" id="U9J-l0-A9Y"/>
                             <constraint firstItem="05y-sr-NLA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="lBl-vL-Mgo"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
